@@ -1,0 +1,35 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true
+	},
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"extends": ["eslint:recommended"],
+	"plugins": ["svelte3"],
+	"overrides": [
+		{
+			"files": ["**/*.svelte"],
+			"processor": "svelte3/svelte3"
+		}
+	],
+	"ignorePatterns": ["build/"],
+	"rules": {
+		"eqeqeq": "error",
+		"no-new": "off",
+		"no-unused-expressions": "off",
+		"space-before-function-paren": "off",
+		/*"space-before-function-paren": ["error", "always"],*/
+		"no-console": "off",
+		"no-debugger": "off",
+		"no-var": "error",
+		"semi": "error",
+		"max-params": ["error", 4],
+		"quotes": [1, "single"],
+		"no-multi-spaces": "error"
+	}
+}

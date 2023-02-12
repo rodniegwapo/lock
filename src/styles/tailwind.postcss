@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--tw-bg-opacity: 1;
+}
+
+html {
+	@apply h-full;
+}
+
+body {
+	@apply font-sans antialiased text-gray-600 min-h-full;
+}
+
+.sidebar-item-active {
+	@apply bg-red-700 text-white;
+}
+
+.sidebar-item-active .sidebar-item-icon {
+	@apply bg-red-700 text-white;
+}
+
+.sidebar-item-inactive {
+	@apply text-gray-300 hover:bg-gray-700 hover:text-white;
+}
+
+.google-map {
+	@apply shadow rounded mt-5 h-80 !important;
+}
+
+@media (min-width: 640px) {
+	table {
+		display: inline-table !important;
+	}
+	thead tr:not(:first-child) {
+		display: none;
+	}
+}
+
+table tr:nth-child(even) {
+	@apply bg-gray-100;
+}
+
+table thead {
+	@apply text-white;
+}
+table thead tr th {
+	@apply bg-gray-800 text-white font-normal p-2;
+}
+table tbody tr td {
+	@apply p-2;
+}
